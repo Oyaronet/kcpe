@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = "718318cf14f5c2c3568b7bb620e6cc32"
 engine = create_engine('postgres://epmswlywsgfgec:a471edc1aa9d0338b9cb4de98802af9a10189f6a\
 576b1311fa17300dbc26bf7a@ec2-44-194-92-192.compute-1.\
-amazonaws.com:5432/deramp098sjfju', echo=False)
+amazonaws.com:5432/deramp098sjfju')
 
 @app.route("/", methods=["GET", "POST"])
 def register():
@@ -62,11 +62,6 @@ def admin_login():
             password and then try again!', 'danger')
             return redirect(url_for('admin_login'))
     return render_template('admin_login.html', form=form)
-
-
-
-
-
 
 
 
