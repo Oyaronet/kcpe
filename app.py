@@ -68,6 +68,7 @@ def admin_login():
         if form.email.data == 'admin@gmail.com' and \
         form.password.data == 'miami':
             data = User.query.all()
+            print(data)
             return render_template('admindashboard.html', data= data)
         else:
             flash(f'Failed to Log in! Check your email or \
