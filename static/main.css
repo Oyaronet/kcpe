@@ -1,0 +1,20 @@
+.bg-purple {
+    background-color: #0b645e;
+}
+.btn-color {
+    background-color: #871a53;
+    color: white
+}
+.h-2 {
+    height: 400px;
+}
+.h-1 {
+    height: 600px;
+}
+.form {
+    width: 300px;
+    margin: 0px auto auto auto;
+}
+.bold {
+    font-weight: 600;
+}
