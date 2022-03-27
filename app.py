@@ -6,6 +6,9 @@ from sqlalchemy import insert, select, update, delete, and_, or_
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "718318cf14f5c2c3568b7bb620e6cc32"
+app.config["SQLALCHEMY_DATABASE_URL"] = "postgres://epmswlywsgfgec:a471edc1aa9d0338b9cb4de98802af9a10189f6a\
+576b1311fa17300dbc26bf7a@ec2-44-194-92-192.compute-1.\
+amazonaws.com:5432/deramp098sjfju"
 engine = create_engine('postgres://epmswlywsgfgec:a471edc1aa9d0338b9cb4de98802af9a10189f6a\
 576b1311fa17300dbc26bf7a@ec2-44-194-92-192.compute-1.\
 amazonaws.com:5432/deramp098sjfju')
