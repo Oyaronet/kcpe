@@ -3,6 +3,25 @@
 
 {% block content %}
     <div class="container bg-light h-1">
-         
+         <table class="table">
+             <thead>
+                 <tr>
+                     <th>#</th>
+                     <th>Username</th>
+                     <th>Email</th>
+                     <th>Password</th>
+                 </tr>
+             </thead>
+             <tbody>
+                  {% for user in data %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.password }}</td>
+                    </tr>
+                  {% endfor %}
+             </tbody>
+         </table>
     </div>
 {% endblock %}
