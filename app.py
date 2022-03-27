@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for, redirect, flash
 from forms import RegistrationForm, UserLoginForm, AdminLoginForm
 from database import users
 from sqlalchemy import create_engine
-from sqlalchemy.sql import insert, select, update, delete, and_, or_
+from sqlalchemy import insert, select, update, delete, and_, or_
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "718318cf14f5c2c3568b7bb620e6cc32"
