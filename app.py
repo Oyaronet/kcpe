@@ -15,7 +15,7 @@ def register():
     if form.validate_on_submit():
         try:
             """ send user data to the database """
-            # users.create(engine, checkfirst=True)
+            users.create(engine, checkfirst=True)
             engine.connect().execute(users.insert(), {
                 "username" : form.username.data,
                 "email": form.email.data,

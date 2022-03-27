@@ -2,7 +2,7 @@ from sqlalchemy import MetaData, create_engine
 from sqlalchemy import Table, Column, String, Integer, ForeignKey
  
 meta = MetaData()
-engine = create_engine('sqlite:///site.db')
+engine = create_engine('sqlite:///site.db', echo=False)
 
 users = Table('users', meta,
     Column('id', Integer, primary_key=True),
